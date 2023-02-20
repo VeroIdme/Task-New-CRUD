@@ -1,0 +1,72 @@
+.container__listUsers{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    
+}
+.containerUsers{
+    padding: 20px 0;
+    position: absolute;
+    background-color: #D2D3D5;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: grid;
+    gap: 20px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, 260px);
+    place-items: center;
+    place-content: center;
+}
+
+.containerUsers li{
+    list-style: none;
+    background-color: #3B4459;
+    color: #5c677b;
+    border-radius: 8px;
+    width: 230px;
+    height: 150px;
+}
+
+.containerUser{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 210px;
+}
+
+h2.containerUser__name{
+    text-transform: uppercase;
+    width: 100%;
+    word-wrap: break-word;
+    color: hsla(0, 0%, 96%, 0.793);
+    font-size: 1.2rem;
+    text-align: center;
+    place-self: center;
+}
+
+.containerUser__email{
+    word-wrap: break-word;
+}
+
+.containerUser__btns{
+    place-self: end;
+    padding-right: 10px;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.containerUser__btns i{
+    color: #D17E39;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2px;
+}
+.containerUser__btns i:hover{
+    background-color: #5C677B;
+}
